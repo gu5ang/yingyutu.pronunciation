@@ -8,7 +8,7 @@
 		<title>英语音标</title>
 		<style>
 			body {
-				background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+				background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 				background-attachment: fixed;
 			}
 
@@ -27,7 +27,7 @@
 
 			p {
 				font-size: 12px;
-				color: #fff;
+				color: #8a8a8a;
 			}
 
 			div {
@@ -45,28 +45,28 @@
 				<tr align="center">
 					<th width="50" rowspan="5">元音</th>
 					<th width="80" rowspan="3">单元音</th>
-					<th width="100">前元音</a></th>
+					<th width="100">高元音</a></th>
 					<td mapid="1" class="phonetic" onclick="playAudio(1)" style="cursor:pointer">/iː/</td>
 					<td mapid="2" class="phonetic" onclick="playAudio(2)" style="cursor:pointer">/ɪ/</td>
-					<td mapid="4" class="phonetic" onclick="playAudio(3)" style="cursor:pointer">/e/</span></td>
-					<td mapid="5" class="phonetic" onclick="playAudio(4)" style="cursor:pointer">/æ/</td>
+					<td mapid="10" class="phonetic" onclick="playAudio(11)" style="cursor:pointer">/uː/</td>
+					<td mapid="11" class="phonetic" onclick="playAudio(12)" style="cursor:pointer">/ʊ/</td>
 					<td>&nbsp;</td>
 				</tr>
 				<tr align="center">
 					<th>中元音</a></th>
+					<td mapid="4" class="phonetic" onclick="playAudio(3)" style="cursor:pointer">/e/</td>
 					<td mapid="8" class="phonetic" onclick="playAudio(5)" style="cursor:pointer">/ɜː/</td>
 					<td mapid="9" class="phonetic" onclick="playAudio(6)" style="cursor:pointer">/ə/</td>
 					<td mapid="18" class="phonetic" onclick="playAudio(7)" style="cursor:pointer">/ʌ/</td>
-					<td>&nbsp;</td>
-					<td>&nbsp;</td>
+					<td mapid="13" class="phonetic" onclick="playAudio(9)" style="cursor:pointer">/ɔː/</td>
 				</tr>
 				<tr align="center">
-					<th>后元音</th>
+					<th>低元音</th>
+					<td mapid="5" class="phonetic" onclick="playAudio(4)" style="cursor:pointer">/æ/</td>
 					<td mapid="17" class="phonetic" onclick="playAudio(8)" style="cursor:pointer">/ɑː/</td>
-					<td mapid="13" class="phonetic" onclick="playAudio(9)" style="cursor:pointer">/ɔː/</td>
 					<td mapid="14" class="phonetic" onclick="playAudio(10)" style="cursor:pointer">/ɒ/</td>
-					<td mapid="10" class="phonetic" onclick="playAudio(11)" style="cursor:pointer">/uː/</td>
-					<td mapid="11" class="phonetic" onclick="playAudio(12)" style="cursor:pointer">/ʊ/</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
 				</tr>
 				<tr align="center">
 					<th rowspan="2">双元音</th>
@@ -86,8 +86,8 @@
 					<td>&nbsp;</td>
 				</tr>
 				<tr align="center">
-					<th rowspan="9">辅音</th>
-					<th rowspan="2">爆破音</th>
+					<th rowspan="11">辅音</th>
+					<th rowspan="2">塞音</th>
 					<th>清辅音</th>
 					<td mapid="41" class="phonetic" onclick="playAudio(21)" style="cursor:pointer">/p/</td>
 					<td mapid="44" class="phonetic" onclick="playAudio(23)" style="cursor:pointer">/t/</td>
@@ -104,7 +104,16 @@
 					<td>&nbsp;</td>
 				</tr>
 				<tr align="center">
-					<th rowspan="2">摩擦音</th>
+					<th>鼻音</th>
+					<th>浊辅音</th>
+					<td mapid="74" class="phonetic" onclick="playAudio(43)" style="cursor:pointer">/m/</td>
+					<td mapid="75" class="phonetic" onclick="playAudio(44)" style="cursor:pointer">/n/</td>
+					<td mapid="77" class="phonetic" onclick="playAudio(45)" style="cursor:pointer">/ŋ/</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr align="center">
+					<th rowspan="2">擦音</th>
 					<th>清辅音</th>
 					<td mapid="56" class="phonetic" onclick="playAudio(27)" style="cursor:pointer">/f/</td>
 					<td mapid="50" class="phonetic" onclick="playAudio(29)" style="cursor:pointer">/s/</td>
@@ -118,36 +127,36 @@
 					<td mapid="51" class="phonetic" onclick="playAudio(30)" style="cursor:pointer">/z/</td>
 					<td mapid="61" class="phonetic" onclick="playAudio(32)" style="cursor:pointer">/ð/</td>
 					<td mapid="55" class="phonetic" onclick="playAudio(34)" style="cursor:pointer">/ʒ/</td>
-					<td mapid="64" class="phonetic" onclick="playAudio(36)" style="cursor:pointer">/r/</td>
+					<td>&nbsp;</td>
 				</tr>
 				<tr align="center">
-					<th rowspan="2">破擦音</th>
+					<th rowspan="2">塞擦音</th>
 					<th>清辅音</th>
 					<td mapid="65" class="phonetic" onclick="playAudio(37)" style="cursor:pointer">/tʃ/</td>
-					<td mapid="72" class="phonetic" onclick="playAudio(39)" style="cursor:pointer">/ts/</td>
-					<td mapid="69" class="phonetic" onclick="playAudio(41)" style="cursor:pointer">/tr/</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
 					<td>&nbsp;</td>
 					<td>&nbsp;</td>
 				</tr>
 				<tr align="center">
 					<th>浊辅音</th>
 					<td mapid="67" class="phonetic" onclick="playAudio(38)" style="cursor:pointer">/dʒ/</td>
-					<td mapid="73" class="phonetic" onclick="playAudio(40)" style="cursor:pointer">/dz/</td>
-					<td mapid="71" class="phonetic" onclick="playAudio(42)" style="cursor:pointer">/dr/</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
 					<td>&nbsp;</td>
 					<td>&nbsp;</td>
 				</tr>
 				<tr align="center">
-					<th>鼻音</th>
+					<th>近音</th>
 					<th>浊辅音</th>
-					<td mapid="74" class="phonetic" onclick="playAudio(43)" style="cursor:pointer">/m/</td>
-					<td mapid="75" class="phonetic" onclick="playAudio(44)" style="cursor:pointer">/n/</td>
-					<td mapid="77" class="phonetic" onclick="playAudio(45)" style="cursor:pointer">/ŋ/</td>
+					<td mapid="83" class="phonetic" onclick="playAudio(48)" style="cursor:pointer">/w/</td>
+					<td mapid="64" class="phonetic" onclick="playAudio(36)" style="cursor:pointer">/r/</td>
+					<td mapid="86" class="phonetic" onclick="playAudio(47)" style="cursor:pointer">/j/</td>
 					<td>&nbsp;</td>
 					<td>&nbsp;</td>
 				</tr>
 				<tr align="center">
-					<th>舌则音</th>
+					<th>边近音</th>
 					<th>浊辅音</th>
 					<td mapid="80" class="phonetic" onclick="playAudio(46)" style="cursor:pointer">/l/</td>
 					<td>&nbsp;</td>
@@ -156,10 +165,18 @@
 					<td>&nbsp;</td>
 				</tr>
 				<tr align="center">
-					<th>半元音</th>
+					<th rowspan="2">辅音连缀</th>
+					<th>清辅音</th>
+					<td mapid="72" class="phonetic" onclick="playAudio(39)" style="cursor:pointer">/ts/</td>
+					<td mapid="69" class="phonetic" onclick="playAudio(41)" style="cursor:pointer">/tr/</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr align="center">
 					<th>浊辅音</th>
-					<td mapid="86" class="phonetic" onclick="playAudio(47)" style="cursor:pointer">/j/</td>
-					<td mapid="83" class="phonetic" onclick="playAudio(48)" style="cursor:pointer">/w/</td>
+					<td mapid="73" class="phonetic" onclick="playAudio(40)" style="cursor:pointer">/dz/</td>
+					<td mapid="71" class="phonetic" onclick="playAudio(42)" style="cursor:pointer">/dr/</td>
 					<td>&nbsp;</td>
 					<td>&nbsp;</td>
 					<td>&nbsp;</td>
@@ -182,6 +199,14 @@
 				(2)查阅了部分资料做了更细致的归类顺序全部严格按照老师DJ音标示范给出的大图进行排序<br>
 				(3)所有读音全部仔细检查N遍以确保准确无误。如/p/读音十分近似/t/<br>
 				(4)已进行移动端适配</a><br>
+				<br>
+				<b>fork修改说明：</b><br>
+				1.添加 DJ 音标元音图<br>
+				2.移除了背景图和特效，加快访问速度<br>
+				3.调整表格，适配英语兔课程原版排序<br>
+				ㅤㅤ(1)单元音：前中后分类修改成高中低分类<br>
+				ㅤㅤ(2)辅音 /r/ 由擦音调整到近音<br>
+				ㅤㅤ(3)拆分破擦音为塞擦音和辅音连缀
 			</p>
 		</div>
 	</body>
