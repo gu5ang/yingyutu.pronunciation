@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    color: #333;
+    padding: 5px;
+}
+
+.container {
+    width: 538px;
+    /* 设置为固定宽度 */
+    margin: 0 auto;
+    /* 保持居中 */
+}
+
+.phonetic-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.28);
+}
+
+.phonetic-table th,
+.phonetic-table td {
+    text-align: center;
+    border: 1px solid #e1e5e9;
+    transition: all 0.2s ease;
+}
+
+.phonetic-table th {
+    background-color: #4a6fa5;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.phonetic-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.phonetic-table tr:hover {
+    background-color: #f0f7ff;
+}
+
+.phonetic {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    min-width: 60px;
+}
+
+.phonetic:hover {
+    background-color: #4a9fa5;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(74, 111, 165, 0.3);
+}
+
+.phonetic:active {
+    transform: scale(0.98);
+}
+
+.image-container {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.notes {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
+
+.notes p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.notes a {
+    color: #4a6fa5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.notes a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+.notes b {
+    color: #2c3e50;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .phonetic-table {
+        font-size: 14px;
+    }
+
+    .phonetic-table th,
+    .phonetic-table td {
+        padding: 8px 5px;
+    }
+
+    .phonetic {
+        font-size: 16px;
+        min-width: 50px;
+        padding: 6px 8px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .phonetic-table {
+        font-size: 13px;
+    }
+
+    .phonetic {
+        font-size: 15px;
+        min-width: 45px;
+        padding: 5px 6px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+}
